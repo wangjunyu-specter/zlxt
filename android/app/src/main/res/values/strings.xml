@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">丰德</string>
+    <string name="title_activity_main">丰德</string>
+    <string name="package_name">com.wjy.fdcd</string>
+    <string name="custom_url_scheme">com.wjy.fdcd</string>
+</resources>

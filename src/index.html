@@ -1,11 +1,33 @@
+<!--
+ * @Author: wjy-mac
+ * @Date: 2020-03-23 12:03:12
+ * @LastEditors: wjy-mac
+ * @LastEditTime: 2020-03-23 16:57:11
+ * @Description: file content
+ -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Zlxt</title>
+  <title>租赁系统</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>
+    window.onload = function(){
+            getRem(720,100)
+        };
+        window.onresize = function(){
+            getRem(720,100)
+        };
+        function getRem(pwidth,prem){
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth/pwidth*prem + "px";
+        }
+  </script>
 </head>
 <body>
   <app-root></app-root>
