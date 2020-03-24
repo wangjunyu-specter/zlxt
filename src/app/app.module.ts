@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-24 15:44:31
+ * @LastEditTime: 2020-03-25 00:09:54
  * @Description: file content
  */
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,19 +15,21 @@ import {BidiModule} from '@angular/cdk/bidi';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { ImgtitleComponent } from './imgtitle/imgtitle.component';
+import { AboutcdComponent } from './aboutcd/aboutcd.component';
 // import { HomeModule } from './home/home.module';
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ImgtitleComponent
+    ImgtitleComponent,
+    AboutcdComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BidiModule,
     FlexLayoutModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
     // HomeModule
   ],
   providers: [],

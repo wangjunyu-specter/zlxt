@@ -1,9 +1,10 @@
+import { AboutcdComponent } from './aboutcd/aboutcd.component';
 import { AboutComponent } from './about/about.component';
 /*
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-24 16:20:04
+ * @LastEditTime: 2020-03-25 00:11:13
  * @Description: file content
  */
 import { NgModule } from '@angular/core';
@@ -17,8 +18,17 @@ const routes: Routes = [
     data: { preload: true }
   },
   {
-    path: 'about/:id',
+    path: 'ProjectIntroduction',
+    loadChildren: () => import('./projectIntroduction/project-introduction.module').then(m => m.ProjectIntroductionModule),
+    data: { preload: true }
+  },
+  {
+    path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'aboutcd',
+    component: AboutcdComponent
   },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   // { path: '**', component: PagenotComponent }
