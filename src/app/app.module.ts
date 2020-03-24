@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-23 12:25:33
+ * @LastEditTime: 2020-03-24 15:44:31
  * @Description: file content
  */
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,10 +13,14 @@ import { AppComponent } from './app.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BidiModule} from '@angular/cdk/bidi';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './about/about.component';
+import { ImgtitleComponent } from './imgtitle/imgtitle.component';
 // import { HomeModule } from './home/home.module';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    ImgtitleComponent
   ],
   imports: [
     BrowserModule,

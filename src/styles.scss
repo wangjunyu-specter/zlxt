@@ -54,7 +54,7 @@ a:hover {}/* 鼠标移动到链接上 */
 a:active {}/* 选定的链接 */
 del,ins,a{text-decoration:none;}
 a:hover,a:active,a:focus{ text-decoration:none;} /* 取消a标签点击后的虚线框 */
-a:active{star:expression(this.onFocus=this.blur());} /* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+// a:active{star:expression(this.onFocus=this.blur());} /* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
 /*
 ::selection{color: #fff;}
 ::-moz-selection{color: #fff;background-color: #4C6E78;}

@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+  overflow: hidden;
   .content-box {
     flex: 1;
     position: relative;
@@ -42,6 +43,11 @@
             width: 100%;
           }
         }
+        .active {
+          img {
+            width: 90%;
+          }
+        }
       }
       &::after {
         content: "";
@@ -50,4 +56,5 @@
       }
     }
   }
+  
 }
