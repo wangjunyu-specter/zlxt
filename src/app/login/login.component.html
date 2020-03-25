@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-25 16:28:44
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-25 17:43:14
+ * @LastEditTime: 2020-03-25 22:26:02
  * @Description: 登录框
  -->
 <div class="login-bg">
@@ -12,23 +12,26 @@
     </span>
     <div class="login">
       <h1>登录</h1>
-      <form>
-        <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="请输入手机号">
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
-        </div>
-          <div class="form-check">
-          <label class="switch">
-            <input type="checkbox" name="exampleCheck1" id="exampleCheck1" />
-            <span class="slider round"></span>
-          </label>
-          <label class="form-check-label" for="exampleCheck1">记住我</label>
-        </div>
-        <br>
-        <button type="submit" class="btn btn-lg btn-block btn-success">登录</button>
-      </form>
+      <div class="form-group">
+        <input type="number" class="form-control" id="exampleInputEmail1" [(ngModel)]="formdata.user"
+        aria-describedby="emailHelp" placeholder="请输入手机号">
+        <p class="pwdts" *ngIf="pwdts">请输入正确的手机号码!</p>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" [(ngModel)]="formdata.pwd" id="exampleInputPassword1"
+        placeholder="请输入密码">
+      </div>
+        <div class="form-check">
+        <label class="switch">
+          <input type="checkbox" name="exampleCheck1" [(ngModel)]="formdata.isbc" id="exampleCheck1" />
+          <span class="slider round"></span>
+        </label>
+        <label class="form-check-label" for="exampleCheck1">记住我</label>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-lg btn-block btn-success" (click)="submit()"
+      [disabled]="!formdata.user || !formdata.pwd || formdata.pwd.length < 6"
+      [ngStyle]="{opacity: !formdata.user || !formdata.pwd || formdata.pwd.length < 6 ? 0.4 : 1}">登录</button>
     </div>
   </div>
 </div>

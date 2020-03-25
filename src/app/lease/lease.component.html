@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-25 14:30:22
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-25 17:54:04
+ * @LastEditTime: 2020-03-25 22:53:21
  * @Description: file content
  -->
 <div class="lease-content" (click)="hideList()">
@@ -33,8 +33,8 @@
       </div>
     </div>
     <div class="item-box" fxLayout ="row" fxLayoutWrap fxLayoutGap="10px">
-      <!-- <div class="house-box" *ngFor="let item of houselist" [ngClass]="{'active': item.yz == 1}">
-        <div class="box">
+      <div class="house-box" *ngFor="let item of houselist" [ngClass]="{'active': item.yz == 1}">
+        <div class="box" (click)="showHousedata(item)">
           <span class="yz-box" *ngIf="!islogin && item.yz == 1">已租</span>
           <span [ngClass]="{'islogin': islogin}">{{item.name}}</span>
           <div class="container-gq" *ngIf="islogin">
@@ -42,9 +42,10 @@
             <div class="pulse"></div>
             <div class="pulse1"></div>
           </div>
-        </div> -->
-      <!-- </div> -->
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<app-login *ngIf="showLogin" (closeClick)="closeLogin()"></app-login>
+<app-login *ngIf="showLogin" (closeClick)="closeLogin()" (subclick)="subfn($event)"></app-login>
+<app-house-data *ngIf="showHouse" [formdata]="housedata" (closeClick)="closeHouse()" (subclick)="subHouse($event)"></app-house-data>
