@@ -2,18 +2,20 @@
  * @Author: wjy-mac
  * @Date: 2020-03-24 15:44:45
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-24 23:40:16
+ * @LastEditTime: 2020-03-26 01:24:20
  * @Description: 关于我们
  -->
 <div class="about-content">
   <div class="page-title-box">
     <app-imgtitle *ngIf="activeIndex == 0" [title]="'about_03'"></app-imgtitle>
     <app-imgtitle *ngIf="activeIndex == 1" [title]="'about2_03'"></app-imgtitle>
-    <app-imgtitle *ngIf="activeIndex == 2" [title]="'about2_03'"></app-imgtitle>
-    <app-imgtitle *ngIf="activeIndex == 3" [title]="'about2_03'"></app-imgtitle>
-    <app-imgtitle *ngIf="activeIndex == 4" [title]="'about_03'"></app-imgtitle>
-    <app-imgtitle *ngIf="activeIndex == 5" [title]="'about_03'"></app-imgtitle>
+    <app-imgtitle *ngIf="activeIndex == 2" [title]="'fdwr'"></app-imgtitle>
+    <app-imgtitle *ngIf="activeIndex == 3" [title]="'jswr'"></app-imgtitle>
+    <app-imgtitle *ngIf="activeIndex == 4" [title]="'fdyx'"></app-imgtitle>
+    <app-imgtitle *ngIf="activeIndex == 5" [title]="'fdcd'"></app-imgtitle>
   </div>
+  <app-right-button *ngIf="!islogin" [name]="'返回'" (isclick)="setBack()"></app-right-button>
+  
   <div class="swiper-container" #swiper>
     <div class="swiper-wrapper">
       <div class="swiper-slide">

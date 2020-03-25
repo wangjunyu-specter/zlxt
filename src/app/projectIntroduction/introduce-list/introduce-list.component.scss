@@ -5,7 +5,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background: url(../../../assets/bjimg/zlxt_index_01.png);
+  background: url(../../../assets/bjimg/zlxt_index_01.jpg);
   background-size: 100% 100%;
   display: flex;
   flex-direction: row;
@@ -38,11 +38,11 @@
       .name {
         text-align: center;
         margin-top: 30px;
-        @include bgcolor(0.12rem, 30px, 500);
+        @include bgcolor(0.33rem, 30px, 500);
       }
       .name1 {
         text-align: center;
-        @include bgcoloryy(0.12rem, 30px, 500);
+        @include bgcoloryy(0.33rem, 30px, 500);
       }
     }
   }
