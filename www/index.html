@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-23 16:57:11
+ * @LastEditTime: 2020-03-25 21:13:08
  * @Description: file content
  -->
 <!doctype html>
@@ -16,20 +16,21 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script>
-    window.onload = function(){
-            getRem(720,100)
+(function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
         };
-        window.onresize = function(){
-            getRem(720,100)
-        };
-        function getRem(pwidth,prem){
-            var html = document.getElementsByTagName("html")[0];
-            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
-            html.style.fontSize = oWidth/pwidth*prem + "px";
-        }
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
   </script>
 </head>
 <body>
   <app-root></app-root>
-<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="scripts.js" defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
 </html>
