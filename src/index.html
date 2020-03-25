@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-23 16:57:11
+ * @LastEditTime: 2020-03-25 17:46:40
  * @Description: file content
  -->
 <!doctype html>
@@ -16,17 +16,18 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script>
-    window.onload = function(){
-            getRem(720,100)
-        };
-        window.onresize = function(){
-            getRem(720,100)
-        };
-        function getRem(pwidth,prem){
-            var html = document.getElementsByTagName("html")[0];
-            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
-            html.style.fontSize = oWidth/pwidth*prem + "px";
-        }
+   !function(n){
+    var  e=n.document,
+         t=e.documentElement,
+         i=720,
+         d=i/100,
+         o="orientationchange"in n?"orientationchange":"resize",
+         a=function(){
+             var n=t.clientWidth||320;n>720&&(n=720);
+             t.style.fontSize=n/d+"px"
+         };
+         e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1))
+}(window);
   </script>
 </head>
 <body>

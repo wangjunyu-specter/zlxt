@@ -16,13 +16,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { ImgtitleComponent } from './imgtitle/imgtitle.component';
 import { AboutcdComponent } from './aboutcd/aboutcd.component';
+import { LeaseComponent } from './lease/lease.component';
+import { RightButtonComponent } from './right-button/right-button.component';
+import { LoginComponent } from './login/login.component';
 // import { HomeModule } from './home/home.module';
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ImgtitleComponent,
-    AboutcdComponent
+    AboutcdComponent,
+    LeaseComponent,
+    RightButtonComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
