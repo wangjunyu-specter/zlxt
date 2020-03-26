@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-26 11:20:56
+ * @LastEditTime: 2020-03-26 21:51:10
  * @Description: file content
  -->
 <div class="page-content">
@@ -19,7 +19,7 @@
         <img src="../assets/navimg/nav_line_03.png" alt="">
       </li>
       <li>
-        <a routerLink="/about" routerLinkActive="active" #rla2="routerLinkActive">
+        <a routerLink="/area" routerLinkActive="active" #rla2="routerLinkActive">
           <img src="../assets/navimg/nav_2{{rla2.isActive ? '_active' : ''}}.png" alt="" srcset="">
         </a>
         <img src="../assets/navimg/nav_line_03.png" alt="">
@@ -31,17 +31,18 @@
         <img src="../assets/navimg/nav_line_03.png" alt="">
       </li>
       <li>
+        <a routerLink="/video" routerLinkActive="active" #rla5="routerLinkActive">
+          <img src="../assets/navimg/nav_5{{rla5.isActive ? '_active' : ''}}.png" alt="" srcset="">
+        </a>
+        <img src="../assets/navimg/nav_line_03.png" alt="">
+      </li>
+      <li>
         <a routerLink="/matching" routerLinkActive="active" #rla4="routerLinkActive">
           <img src="../assets/navimg/nav_4{{rla4.isActive ? '_active' : ''}}.png" alt="" srcset="">
         </a>
         <img src="../assets/navimg/nav_line_03.png" alt="">
       </li>
-      <li>
-        <a routerLink="/lease" routerLinkActive="active" #rla5="routerLinkActive">
-          <img src="../assets/navimg/nav_5{{rla5.isActive ? '_active' : ''}}.png" alt="" srcset="">
-        </a>
-        <img src="../assets/navimg/nav_line_03.png" alt="">
-      </li>
+      
       <li>
         <a routerLink="/lease" routerLinkActive="active" #rla6="routerLinkActive">
           <img src="../assets/navimg/nav_6{{rla6.isActive ? '_active' : ''}}.png" alt="" srcset="">

@@ -1,8 +1,9 @@
+import { AfterViewInit } from '@angular/core';
 /*
  * @Author: wjy-mac
  * @Date: 2020-03-26 09:52:49
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-26 10:02:48
+ * @LastEditTime: 2020-03-26 22:46:42
  * @Description: file content
  */
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
@@ -13,16 +14,16 @@ declare var PhotoSphereViewer;
   templateUrl: './viewer.component.html',
   styleUrls: ['./viewer.component.scss']
 })
-export class ViewerComponent implements OnInit {
+export class ViewerComponent implements OnInit, AfterViewInit {
   @ViewChild('three') threeDiv: ElementRef;
   constructor() { }
 
   ngOnInit(): void {
   }
   ngAfterViewInit(): void {
-    new PhotoSphereViewer({
+    const view = new PhotoSphereViewer({
       panorama: '../../assets/360/360.jpg',
       container: this.threeDiv.nativeElement
-    })
+    });
   }
 }

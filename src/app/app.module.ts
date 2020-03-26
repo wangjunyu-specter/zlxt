@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-26 10:49:06
+ * @LastEditTime: 2020-03-26 22:09:33
  * @Description: file content
  */
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,7 +20,9 @@ import { LoginComponent } from './login/login.component';
 import { HouseDataComponent } from './house-data/house-data.component';
 import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
 // import { MatchingModule } from './matching/matching.module';
-// import { HomeModule } from './home/home.module';
+import { HomeModule } from './home/home.module';
+import { VideoComponent } from './video/video.component';
+import { AreaComponent } from './area/area.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,17 +31,19 @@ import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
     LeaseComponent,
     LoginComponent,
     HouseDataComponent,
+    VideoComponent,
+    AreaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BidiModule,
     FlexLayoutModule,
-    BrowserAnimationsModule,
     FormsModule,
     SharedmoduleModule,
     // MatchingModule
-    // HomeModule
+    HomeModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

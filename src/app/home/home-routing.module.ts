@@ -12,7 +12,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent
   }
 ];
