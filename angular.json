@@ -33,7 +33,9 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/swiper/js/swiper.min.js"
+              "./node_modules/swiper/js/swiper.min.js",
+              "src/assets/js/three.min.js",
+              "src/assets/js/photo-sphere-viewer.min.js"
             ]
           },
           "configurations": {

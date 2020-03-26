@@ -2,12 +2,12 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-26 00:50:05
+ * @LastEditTime: 2020-03-26 11:20:56
  * @Description: file content
  -->
 <div class="page-content">
-  <div class="content-box">
-    <router-outlet></router-outlet>
+  <div class="content-box" [@routeAnimation]="getAnimationData(routerOutlet)">
+    <router-outlet #routerOutlet="outlet"></router-outlet>
   </div>
   <nav fxHide.xs="true">
     <img src="../assets/bjimg/zlxt_index_02.png" alt="" srcset="">
@@ -31,7 +31,7 @@
         <img src="../assets/navimg/nav_line_03.png" alt="">
       </li>
       <li>
-        <a routerLink="/home3" routerLinkActive="active" #rla4="routerLinkActive">
+        <a routerLink="/matching" routerLinkActive="active" #rla4="routerLinkActive">
           <img src="../assets/navimg/nav_4{{rla4.isActive ? '_active' : ''}}.png" alt="" srcset="">
         </a>
         <img src="../assets/navimg/nav_line_03.png" alt="">
