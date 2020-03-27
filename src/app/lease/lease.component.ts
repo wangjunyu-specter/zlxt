@@ -3,7 +3,7 @@ import { UserloginService } from './../userlogin.service';
  * @Author: wjy-mac
  * @Date: 2020-03-25 14:30:22
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-25 23:01:06
+ * @LastEditTime: 2020-03-27 13:51:23
  * @Description: file content
  */
 import { Component, OnInit } from '@angular/core';
@@ -32,22 +32,22 @@ export class LeaseComponent implements OnInit {
     this.showLdlist = false;
     this.showDylist = false;
     this.ldlist = [
-      {name: '1栋', id: 0, child: [
-        {name: '一单元', id: 1},
-        {name: '二单元', id: 2},
+      {name: '全部', id: 0, child: [
+        {name: '一号', id: 1},
+        {name: '二号', id: 2},
       ]},
-      {name: '3栋', id: 1, child: [
-        {name: '一单元', id: 1},
-        {name: '二单元', id: 2},
-        {name: '三单元', id: 3},
+      {name: '高层', id: 1, child: [
+        {name: '一号', id: 1},
+        {name: '二号', id: 2},
+        {name: '三号', id: 3},
       ]},
-      {name: '4栋', id: 2, child: [
-        {name: '一单元', id: 1},
-        {name: '二单元', id: 2},
+      {name: '中层', id: 2, child: [
+        {name: '一号', id: 1},
+        {name: '二号', id: 2},
       ]},
-      {name: '5栋', id: 3, child: [
-        {name: '一单元', id: 1},
-        {name: '二单元', id: 2},
+      {name: '低层', id: 3, child: [
+        {name: '一号', id: 1},
+        {name: '二号', id: 2},
       ]},
     ];
     this.nowld = this.ldlist[0];
