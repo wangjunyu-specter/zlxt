@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-26 11:17:03
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-26 12:30:43
+ * @LastEditTime: 2020-04-01 23:45:38
  * @Description: 路由动画
  */
 import {
@@ -58,7 +58,7 @@ export const slideInAnimation =
           animate('200ms ease-out', style({ left: '-100%'}))
         ]),
         query(':enter', [
-          animate('300ms ease-out', style({ left: '0%'}))
+          animate('200ms ease-out', style({ left: '0%'}))
         ])
       ]),
       query(':enter', animateChild()),

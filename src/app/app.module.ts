@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-26 22:09:33
+ * @LastEditTime: 2020-04-01 23:32:28
  * @Description: file content
  */
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,9 +23,8 @@ import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
 import { HomeModule } from './home/home.module';
 import { VideoComponent } from './video/video.component';
 import { AreaComponent } from './area/area.component';
-import { HxabouthomeComponent } from './hxabouthome/hxabouthome.component';
-import { HxaboutlistComponent } from './hxaboutlist/hxaboutlist.component';
-import { HxaboutcontentComponent } from './hxaboutcontent/hxaboutcontent.component';
+
+import { HxaboutModule } from './hxabout/hxabout.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +34,7 @@ import { HxaboutcontentComponent } from './hxaboutcontent/hxaboutcontent.compone
     LoginComponent,
     HouseDataComponent,
     VideoComponent,
-    AreaComponent,
-    HxabouthomeComponent,
-    HxaboutlistComponent,
-    HxaboutcontentComponent,
+    AreaComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +46,7 @@ import { HxaboutcontentComponent } from './hxaboutcontent/hxaboutcontent.compone
     // MatchingModule
     HomeModule,
     BrowserAnimationsModule,
+    HxaboutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

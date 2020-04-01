@@ -1,6 +1,4 @@
-import { HxaboutcontentComponent } from './hxaboutcontent/hxaboutcontent.component';
-import { HxaboutlistComponent } from './hxaboutlist/hxaboutlist.component';
-import { HxabouthomeComponent } from './hxabouthome/hxabouthome.component';
+
 import { AreaComponent } from './area/area.component';
 import { VideoComponent } from './video/video.component';
 import { LeaseComponent } from './lease/lease.component';
@@ -10,7 +8,7 @@ import { AboutComponent } from './about/about.component';
  * @Author: wjy-mac
  * @Date: 2020-03-23 12:03:12
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-31 13:04:45
+ * @LastEditTime: 2020-04-01 23:36:25
  * @Description: file content
  */
 import { NgModule } from '@angular/core';
@@ -31,6 +29,11 @@ const routes: Routes = [
   {
     path: 'matching',
     loadChildren: () => import('./matching/matching.module').then(m => m.MatchingModule),
+    data: { preload: true }
+  },
+  {
+    path: 'hxabout',
+    loadChildren: () => import('./hxabout/hxabout.module').then(m => m.HxaboutModule),
     data: { preload: true }
   },
   {
@@ -56,21 +59,6 @@ const routes: Routes = [
   {
     path: 'area',
     component: AreaComponent,
-    data: { animation: 'area' }
-  },
-  {
-    path: 'hxabout',
-    component: HxabouthomeComponent,
-    data: { animation: 'area' }
-  },
-  {
-    path: 'hxaboutlist',
-    component: HxaboutlistComponent,
-    data: { animation: 'area' }
-  },
-  {
-    path: 'hxcontent',
-    component: HxaboutcontentComponent,
     data: { animation: 'area' }
   },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },

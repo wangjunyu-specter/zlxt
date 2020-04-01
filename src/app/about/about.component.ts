@@ -2,15 +2,14 @@
  * @Author: wjy-mac
  * @Date: 2020-03-24 15:44:45
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-31 12:41:53
+ * @LastEditTime: 2020-04-02 00:10:22
  * @Description: file content
  */
 import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import {trigger, state, transition, style, animate} from '@angular/animations';
 import { switchMap } from 'rxjs/operators';
-import * as Swiper from 'swiper';
-declare var Swiper;
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
