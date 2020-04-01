@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-24 15:44:45
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-26 22:36:27
+ * @LastEditTime: 2020-03-31 12:41:53
  * @Description: file content
  */
 import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
@@ -39,25 +39,25 @@ export class AboutComponent implements OnInit, AfterViewInit  {
     this.activeIndex = -1;
   }
   ngAfterViewInit(): void {
-    this.activeIndex = 0;
-    this.swiperdata = new Swiper(this.swiperDiv.nativeElement, {
-      direction : 'vertical',
-      width: window.innerWidth,
-      height : window.innerHeight,
-      // virtualTranslate : true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-    this.swiperdata.on('slideChangeTransitionStart', () => {
-      this.moveStart();
-      this.activeIndex = null;
-      setTimeout(() => {
-        console.log(this.swiperdata.activeIndex)
-        this.activeIndex = this.swiperdata.activeIndex;
-        this.moveEnd();
-      }, 300);
-    });
+    // this.activeIndex = 0;
+    // this.swiperdata = new Swiper(this.swiperDiv.nativeElement, {
+    //   direction : 'vertical',
+    //   width: window.innerWidth,
+    //   height : window.innerHeight,
+    //   // virtualTranslate : true,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //   },
+    // });
+    // this.swiperdata.on('slideChangeTransitionStart', () => {
+    //   this.moveStart();
+    //   this.activeIndex = null;
+    //   setTimeout(() => {
+    //     console.log(this.swiperdata.activeIndex)
+    //     this.activeIndex = this.swiperdata.activeIndex;
+    //     this.moveEnd();
+    //   }, 300);
+    // });
   }
   moveStart() {
     console.log('开始')

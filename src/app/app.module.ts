@@ -23,6 +23,9 @@ import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
 import { HomeModule } from './home/home.module';
 import { VideoComponent } from './video/video.component';
 import { AreaComponent } from './area/area.component';
+import { HxabouthomeComponent } from './hxabouthome/hxabouthome.component';
+import { HxaboutlistComponent } from './hxaboutlist/hxaboutlist.component';
+import { HxaboutcontentComponent } from './hxaboutcontent/hxaboutcontent.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,9 @@ import { AreaComponent } from './area/area.component';
     HouseDataComponent,
     VideoComponent,
     AreaComponent,
+    HxabouthomeComponent,
+    HxaboutlistComponent,
+    HxaboutcontentComponent,
   ],
   imports: [
     BrowserModule,
