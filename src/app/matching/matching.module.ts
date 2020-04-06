@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-26 10:12:46
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-26 10:51:10
+ * @LastEditTime: 2020-04-06 22:12:00
  * @Description: file content
  */
 import { NgModule } from '@angular/core';
@@ -15,6 +15,7 @@ import { MatchingHomeComponent } from './matching-home/matching-home.component';
 import { BusinessComponent } from './business/business.component';
 import { SharedmoduleModule } from '../sharedmodule/sharedmodule.module';
 
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SharedmoduleModule } from '../sharedmodule/sharedmodule.module';
   imports: [
     CommonModule,
     MatchingRoutingModule,
-    SharedmoduleModule
+    SharedmoduleModule,
+    FlexLayoutModule
   ]
 })
 export class MatchingModule { }

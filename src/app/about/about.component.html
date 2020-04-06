@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-24 15:44:45
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-04-01 23:10:00
+ * @LastEditTime: 2020-04-06 21:55:41
  * @Description: 关于我们
  -->
 <div class="about-content">
@@ -16,7 +16,7 @@
   </div>
   <app-right-button [name]="'返回'" (isclick)="setBack()"></app-right-button>
   <div class="swiper-container">
-    <div class="content-1 content-box">
+    <div class="content-1 content-box" [ngStyle.xs]="{'paddingTop.px': 50, 'paddingBottom': 50}">
       <div class="top">
         <p>成都青年房产有限责任公司是丰德集团全资子公司，其历史可追溯至1988年，是成都市当时最早设立的18家专业房地产开发公司之一。</p>
         <p>青年房产作为一家具有高度社会责任感和企业道德的资深房地产开发企业，始终坚持“品质、信赖、关爱”的经营理念和“用心专筑”的发展宗旨。</p>
@@ -57,8 +57,8 @@
       </div>
     </div>
     <div class="content-4 content-box">
-      <div class="center">
-        <div class="left">
+      <div class="center" [ngStyle.xs]="{'flexDirection': 'column'}">
+        <div class="left" [ngStyle.xs]="{'width.%': '100', 'marginBottom.px': 10}">
           <img src="../../assets/lsimg/jswr.png" alt="">
         </div>
         <div class="right">
@@ -73,8 +73,8 @@
       </div>
     </div>
     <div class="content-5 content-box">
-      <div class="center">
-        <div class="left">
+      <div class="center" [ngStyle.xs]="{'flexDirection': 'column'}">
+        <div class="left" [ngStyle.xs]="{'width.%': '100', 'marginBottom.px': 10}">
           <p>项目位于蜀西环街66号，为单栋20层商业办公楼，
               总建筑面积约5万平方米，项目于2011年5月开工建设，
               2013年7月全面交付使用。</p>
@@ -87,14 +87,14 @@
         </div>
       </div>
     </div>
-    <div class="content-6 content-box">
+    <div class="content-6 content-box"  [ngStyle.xs]="{'flexDirection': 'column'}">
       <div class="top" style="margin-bottom: 20px;">
         <p>项目目前正在修建中，位于成都市青羊区鼓楼南街99号,
             是成都市重点项目及青羊区重点项目，地处成都市中心CBD区域,
             占地面积约18亩，总建筑面积约18万平方米,
             建筑高达210米，是该区域未来地标型建筑</p>
       </div>
-      <div class="img-box">
+      <div class="img-box" [ngStyle.xs]="{'width.%': '100', 'marginBottom.px': 10}">
         <img src="../../assets/lsimg/fdcd.png" alt="">
       </div>
     </div>

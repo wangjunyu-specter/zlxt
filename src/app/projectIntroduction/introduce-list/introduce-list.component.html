@@ -2,19 +2,30 @@
  * @Author: wjy-mac
  * @Date: 2020-03-25 00:16:19
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-04-02 11:09:03
+ * @LastEditTime: 2020-04-06 21:41:08
  * @Description: 项目介绍首页
  -->
 <div class="list-content">
-  <div class="img-content">
-    <div class="item" [routerLink]="['projectcontent']" routerLinkActive="router-link-active" >
-      <div class="img-box">
+  <div class="img-content" 
+  [ngStyle.xs]="{'flexDirection': 'column', 'justifyContent': 'center', 'alignItems': 'center;'}"
+  >
+    <div class="item"
+    [ngStyle.lg]="{'width.%': 29}"
+    [ngStyle.md]="{'width.%': 33}"
+    [ngStyle.sm]="{'width.%': 50, 'textAlign': 'center'}"
+    [ngStyle.xs]="{'width.%': 70, 'marginBottom.px': 20}"
+    [routerLink]="['projectcontent']" routerLinkActive="router-link-active" >
+      <div class="img-box" [ngStyle.sm]="{'width.%': 65, 'display': 'inline-block'}">
         <div>
           <img src="../../../assets/lsimg/js_03.png" alt="">
         </div>
       </div>
-      <div class="name">项目介绍</div>
-      <div class="name1">项目介绍</div>
+      <div class="name"
+      [ngStyle.xs]="{'fontSize.px': 20, 'marginTop.px': 20}"
+      [ngStyle.sm]="{'fontSize.px': 17, 'marginTop.px': 20}">项目介绍</div>
+      <div class="name1"
+      [ngStyle.xs]="{'fontSize.px': 20}"
+      [ngStyle.sm]="{'fontSize.px': 17.2}">项目介绍</div>
     </div>
     <!-- <div class="item">
       <div class="img-box">
@@ -25,14 +36,21 @@
       <div class="name">分区展示</div>
       <div class="name1">分区展示</div>
     </div> -->
-    <div class="item" [routerLink]="['scenery']" routerLinkActive="router-link-active" >
-      <div class="img-box">
+    <div class="item"
+    [ngStyle.lg]="{'width.%': 29}"
+    [ngStyle.md]="{'width.%': 33}"
+    [ngStyle.sm]="{'width.%': 50, 'textAlign': 'center'}"
+    [ngStyle.xs]="{'width.%': 70}"
+    [routerLink]="['scenery']" routerLinkActive="router-link-active" >
+      <div class="img-box" [ngStyle.sm]="{'width.%': 65, 'display': 'inline-block'}">
         <div>
           <img src="../../../assets/lsimg/js_05.png" alt="">
         </div>
       </div>
-      <div class="name">配套、景观</div>
-      <div class="name1">配套、景观</div>
+      <div class="name" [ngStyle.xs]="{'fontSize.px': 20, 'marginTop.px': 20}"
+      [ngStyle.sm]="{'fontSize.px': 17, 'marginTop.px': 20}">配套、景观</div>
+      <div class="name1" [ngStyle.xs]="{'fontSize.px': 20}"
+      [ngStyle.sm]="{'fontSize.px': 17.2}">配套、景观</div>
     </div>
   </div>
 </div>

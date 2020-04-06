@@ -2,7 +2,7 @@
  * @Author: wjy-mac
  * @Date: 2020-03-26 10:46:28
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-04-02 10:57:55
+ * @LastEditTime: 2020-04-06 22:17:40
  * @Description: file content
  */
 import { NgModule } from '@angular/core';
@@ -11,6 +11,7 @@ import { ImgtitleComponent } from './imgtitle/imgtitle.component';
 import { RightButtonComponent } from './right-button/right-button.component';
 import { ViewerComponent } from './viewer/viewer.component';
 import { LoginBtnComponent } from './login-btn/login-btn.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 
@@ -28,7 +29,8 @@ import { LoginBtnComponent } from './login-btn/login-btn.component';
     RightButtonComponent,
     ImgtitleComponent,
     ViewerComponent,
-    LoginBtnComponent
+    LoginBtnComponent,
+    FlexLayoutModule
   ],
 })
 export class SharedmoduleModule { }

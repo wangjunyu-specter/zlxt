@@ -41,24 +41,24 @@ public class StartActivity extends Activity {
     });
 
 //    定时播放跳转，时间十秒
-//    new Handler().postDelayed(new Runnable() {
-//      @Override
-//      public void run() {
-//        Intent intent = new Intent(StartActivity.this,MainActivity.class);
-//        startActivity(intent);
-//        inst.finish();
-//      }
-//    },10000);
-
-//    视频播放完成后执行跳转
-    vv.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+    new Handler().postDelayed(new Runnable() {
       @Override
-      public void onCompletion(MediaPlayer mp) {
+      public void run() {
         Intent intent = new Intent(StartActivity.this,MainActivity.class);
         startActivity(intent);
         inst.finish();
       }
-    });
+    },4000);
+
+//    视频播放完成后执行跳转
+//    vv.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//      @Override
+//      public void onCompletion(MediaPlayer mp) {
+//        Intent intent = new Intent(StartActivity.this,MainActivity.class);
+//        startActivity(intent);
+//        inst.finish();
+//      }
+//    });
     /*主要代码结束位置*/
   }
 }

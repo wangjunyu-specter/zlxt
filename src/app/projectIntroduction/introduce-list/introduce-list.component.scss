@@ -18,7 +18,7 @@
     justify-content: space-between;
     align-items: stretch;
     .item {
-      width: 23%;
+      width: 35%;
       .img-box {
         width: 100%;
         box-shadow: -2px 2px 5px #616060;
@@ -38,11 +38,11 @@
       .name {
         text-align: center;
         margin-top: 30px;
-        @include bgcolor(0.33rem, 30px, 500);
+        @include bgcolor(27px, 30px, 500);
       }
       .name1 {
         text-align: center;
-        @include bgcoloryy(0.33rem, 30px, 500);
+        @include bgcoloryy(27px, 30px, 500);
       }
     }
   }
