@@ -1,0 +1,30 @@
+<!--
+ * @Author: wjy-mac
+ * @Date: 2020-03-25 16:28:44
+ * @LastEditors: wjy-mac
+ * @LastEditTime: 2020-03-25 23:00:13
+ * @Description: 登录框
+ -->
+ <div class="login-bg">
+  <div class="login-content" [ngStyle.xs]="{'width.%': 90}" [ngStyle.sm]="{'width.%': 70}">
+    <span (click)="LoginOut()">
+      <svg t="1585128141557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1346" width="24" height="24"><path d="M591.232 511.68l416.704-416.704a54.4 54.4 0 0 0 0-76.736L1005.696 16a54.4 54.4 0 0 0-76.736 0l-416.64 417.216L95.488 15.808a54.4 54.4 0 0 0-76.672 0L16.576 18.048a53.504 53.504 0 0 0 0 76.736l416.64 416.896-416.64 416.64a54.4 54.4 0 0 0 0 76.8l2.304 2.24c21.056 21.12 55.616 21.12 76.672 0l416.704-416.704 416.704 416.704c21.12 21.12 55.68 21.12 76.736 0l2.24-2.304a54.4 54.4 0 0 0 0-76.672L591.36 511.68z" fill="#7C8083" p-id="1347"></path></svg>
+    </span>
+    <div class="login">
+      <h1>{{formdata.dname}}/{{formdata.dyname}}/{{formdata.name}}</h1>
+      <div class="form-check">
+        <label class="switch">
+          <input type="checkbox" name="exampleCheck1" [(ngModel)]="formdata.yz" id="exampleCheck1" />
+          <span class="slider round"></span>
+        </label>
+        <label class="form-check-label" for="exampleCheck1">已租</label>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="formdata.bz"
+        aria-describedby="emailHelp" placeholder="请输入备注">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-lg btn-block btn-success" (click)="submit()">确定</button>
+    </div>
+  </div>
+</div>

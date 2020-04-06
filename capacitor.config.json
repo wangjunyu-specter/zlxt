@@ -1,0 +1,8 @@
+{
+  "appId": "com.wjy.zlxt",
+  "appName": "zlxt",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
