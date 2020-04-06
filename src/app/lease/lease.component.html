@@ -2,15 +2,15 @@
  * @Author: wjy-mac
  * @Date: 2020-03-25 14:30:22
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-03-27 13:50:29
+ * @LastEditTime: 2020-04-02 10:57:34
  * @Description: file content
  -->
 <div class="lease-content" (click)="hideList()">
   <div class="page-title-box">
     <app-imgtitle [title]="'zlgl'"></app-imgtitle>
     <div class="login-box">
-      <app-right-button *ngIf="!islogin" [name]="'登录'" (isclick)="setLogin()"></app-right-button>
-      <app-right-button *ngIf="islogin" [name]="'退出'" (isclick)="setLoginout()"></app-right-button>
+      <app-login-btn *ngIf="!islogin" [name]="'登录'" (isclick)="setLogin()"></app-login-btn>
+      <app-login-btn *ngIf="islogin" [name]="'退出'" (isclick)="setLoginout()"></app-login-btn>
     </div>
   </div>
   <div class="lease-content-box">

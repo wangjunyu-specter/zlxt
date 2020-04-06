@@ -1,0 +1,20 @@
+.page-title-box {
+  position: fixed;
+  top: .3rem;
+  left: .3rem;
+  width: calc(100% - .3rem);
+}
+.scenery {
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center bottom;
+  background-repeat: no-repeat; 
+  background-image: url(../../../assets/bjimg/hxzs2.jpg);
+  img {
+    width: 76%;
+    margin: 40px 13%;
+    &:first-of-type {
+      margin-top: 100px;
+    }
+  }
+}
