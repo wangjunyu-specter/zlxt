@@ -1,8 +1,0 @@
-{
-  "appId": "com.wjy.fdcd",
-  "appName": "丰德",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "cordova": {}
-}
