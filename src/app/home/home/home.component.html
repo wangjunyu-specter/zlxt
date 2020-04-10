@@ -2,16 +2,18 @@
  * @Author: wjy-mac
  * @Date: 2020-03-23 23:42:37
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-04-06 21:57:39
+ * @LastEditTime: 2020-04-09 22:16:44
  * @Description: 首页
  -->
 <div class="home-box">
   <div class="img-item">
-    <div class="item" (click)="open('about')">
+    <div class="item">
       <div class="box"
       [ngStyle.xs]="{'width.%': 100}"
+      (click)="open('about')"
       >
-        <img [ngStyle.sm]="{'marginRight.%': 1}" [ngStyle.xs]="{'marginRight.%': 0, 'width.%': 100}" src="../../../assets/bjimg/index_left.png" alt="">
+        <img [ngStyle.sm]="{'marginRight.%': 1}"
+        [ngStyle.xs]="{'marginRight.%': 0, 'width.%': 100}" src="../../../assets/bjimg/index_left.png" alt="">
         <div class="container-gq" [ngStyle.sm]="{'left.%': 50}">
           <div class="dot"></div>
           <div class="pulse"></div>
@@ -19,11 +21,13 @@
         </div>
       </div>
     </div>
-    <div class="item" (click)="open('aboutcd')">
+    <div class="item">
       <div class="box"
       [ngStyle.xs]="{'width.%': 100}"
+      (click)="open('aboutcd')"
       >
-        <img [ngStyle.sm]="{'marginLeft.%': 1}" [ngStyle.xs]="{'marginRight.%': 0, 'width.%': 100}" src="../../../assets/bjimg/index_right.png" alt="">
+        <img [ngStyle.sm]="{'marginLeft.%': 1}"
+        [ngStyle.xs]="{'marginRight.%': 0, 'width.%': 100}" src="../../../assets/bjimg/index_right.png" alt="">
         <div class="container-gq" [ngStyle.sm]="{'left.%': 50}">
           <div class="dot"></div>
           <div class="pulse"></div>

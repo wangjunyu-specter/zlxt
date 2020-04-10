@@ -1,3 +1,10 @@
+/*
+ * @Author: wjy-mac
+ * @Date: 2020-04-06 17:08:23
+ * @LastEditors: wjy-mac
+ * @LastEditTime: 2020-04-06 22:29:25
+ * @Description: file content
+ */
 package com.wjy.zlxt;
 
 import android.app.Activity;
@@ -48,7 +55,7 @@ public class StartActivity extends Activity {
         startActivity(intent);
         inst.finish();
       }
-    },4000);
+    },10000);
 
 //    视频播放完成后执行跳转
 //    vv.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {

@@ -1,6 +1,6 @@
 {
   "appId": "com.wjy.zlxt",
-  "appName": "zlxt",
+  "appName": "租赁系统",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

@@ -5,7 +5,7 @@ import { IntroduceListComponent } from './introduce-list/introduce-list.componen
  * @Author: wjy-mac
  * @Date: 2020-03-25 00:08:56
  * @LastEditors: wjy-mac
- * @LastEditTime: 2020-04-02 11:08:50
+ * @LastEditTime: 2020-04-10 13:02:01
  * @Description: file content
  */
 import { ProjectIntroductionComponent } from './project-introduction/project-introduction.component';
@@ -18,16 +18,16 @@ const routes: Routes = [
     path: '',
     component: ProjectIntroductionComponent,
     children: [
+      // {
+      //   path: 'projectcontent',
+      //   component: IntroduceListComponent
+      // },
+      // {
+      //   path: 'scenery',
+      //   component: SceneryComponent
+      // },
       {
         path: '',
-        component: IntroduceListComponent
-      },
-      {
-        path: 'scenery',
-        component: SceneryComponent
-      },
-      {
-        path: 'projectcontent',
         component: ProjectintroductionContentComponent
       }
     ]
